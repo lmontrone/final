@@ -9,6 +9,14 @@ public class Rectangle extends Shape {
 	@Override
 	void draw() {
 	}
+	
+	public void Negative(int x, int y) throws IllegalRectangle{
+		
+		if(x < 0 || y < 0){
+			throw new IllegalRectangle();
+		}
+		
+	}
 
 	@Override
 	public double ComputeArea() {
